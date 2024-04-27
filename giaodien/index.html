@@ -55,6 +55,42 @@
         </div>
     </header>
 
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="images/slider1.jpg" alt="">
+            <img src="images/slider2.jpg" alt="">
+            <img src="images/slider3.jpg" alt="">
+            <img src="images/slider4.jpg" alt="">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
 </body>
+
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector('.aspect-ratio-169')
+    let imgNumber = imgPosition.length
+    let index = 0
+    imgPosition.forEach(function (image, index) {
+        image.style.left = index * 100 + "%"
+    })
+
+    function imgSlide() {
+        index++;
+        console.log(index)
+        if (index >= imgNumber) {
+            index = 0;
+        }
+        imgContainer.style.left = "-" + index * 100 + "%"
+    }
+
+    setInterval(imgSlide, 5000)
+</script>
 
 </html>
