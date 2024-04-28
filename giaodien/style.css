@@ -93,8 +93,10 @@ header {
 }
 
 #Slider {
+    position: relative;
     padding-bottom: 30px;
     border-bottom: 2px solid #000;
+    overflow: hidden;
 }
 
 .aspect-ratio-169 {
@@ -115,6 +117,7 @@ header {
 
 .dot-container {
     position: absolute;
+    bottom: 0;
     height: 30px;
     width: 100%;
     display: flex;
@@ -129,6 +132,7 @@ header {
     background-color: #ccc;
     border-radius: 50%;
     margin-right: 12px;
+    cursor: pointer;
 }
 
 .dot.active {
