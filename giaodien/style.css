@@ -85,6 +85,7 @@ header {
     width: 100%;
     border: none;
     border-bottom: 1px solid #333;
+    outline: none;
 }
 
 .others>li:first-child i {
@@ -102,7 +103,7 @@ header {
 .aspect-ratio-169 {
     display: block;
     position: relative;
-    padding-top: 56.25%;
+    padding-bottom: calc(100% / (16 / 8));
     transition: 0.3s;
 }
 
@@ -110,7 +111,7 @@ header {
     display: block;
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 100%;
     top: 0;
     left: 0;
 }
@@ -137,4 +138,37 @@ header {
 
 .dot.active {
     background-color: #333;
+}
+
+/*---------------------APP---------------------------*/
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+
+.app-google {
+    margin: 50px;
+}
+
+.app-google img {
+    height: 50px;
+}
+
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+
+.app-container input {
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    width: 300px;
+    text-align: center;
+    outline: none;
 }
