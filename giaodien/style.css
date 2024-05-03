@@ -20,6 +20,16 @@ header {
     padding: 12px 50px;
     height: 70px;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+header:hover {
+    background: rgba(255, 255, 255, 1);
 }
 
 .logo {
@@ -38,7 +48,7 @@ header {
 
 .menu>li:hover .sub-menu {
     visibility: visible;
-    top: 30px;
+    top: 50px;
 }
 
 .sub-menu {
@@ -47,8 +57,10 @@ header {
     border: 1px solid #ccc;
     padding: 10px 0 10px 20px;
     visibility: hidden;
-    top: 50px;
+    top: 60px;
     transition: 0.3s;
+    z-index: 1;
+    background: #fff;
 }
 
 .sub-menu ul {
@@ -86,6 +98,7 @@ header {
     border: none;
     border-bottom: 1px solid #333;
     outline: none;
+    background: transparent;
 }
 
 .others>li:first-child i {
@@ -153,6 +166,7 @@ header {
 
 .app-google img {
     height: 50px;
+    cursor: pointer;
 }
 
 .app-container p {
@@ -217,4 +231,11 @@ footer {
     color: #333;
 }
 
-footer
+.footer-center {
+    text-align: center;
+}
+
+.footer-bottom {
+    margin: 20px 0;
+    text-align: center;
+}
