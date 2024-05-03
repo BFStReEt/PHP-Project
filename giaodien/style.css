@@ -28,6 +28,10 @@ header {
     background: rgba(255, 255, 255, 0.3);
 }
 
+header.sticky {
+    background: rgba(255, 255, 255, 1);
+}
+
 header:hover {
     background: rgba(255, 255, 255, 1);
 }
@@ -86,8 +90,24 @@ header:hover {
 
 .others>li {
     padding: 0 12px;
+    position: relative;
 }
 
+.others>li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    background: #dddddd;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.others>li:last-child::after {
+    display: none;
+}
 
 .others>li:first-child {
     position: relative;
