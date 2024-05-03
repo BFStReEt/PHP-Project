@@ -53,6 +53,7 @@ header:hover {
 .menu>li:hover .sub-menu {
     visibility: visible;
     top: 50px;
+    border-radius: 10px;
 }
 
 .sub-menu {
@@ -62,7 +63,7 @@ header:hover {
     padding: 10px 0 10px 20px;
     visibility: hidden;
     top: 60px;
-    transition: 0.3s;
+    transition: 0.05s;
     z-index: 1;
     background: #fff;
 }
@@ -259,3 +260,5 @@ footer {
     margin: 20px 0;
     text-align: center;
 }
+
+/*--------------------- Category ------------------- */
