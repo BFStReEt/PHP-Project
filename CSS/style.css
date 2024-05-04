@@ -77,7 +77,7 @@ header:hover {
     padding: 10px 0 10px 20px;
     visibility: hidden;
     top: 60px;
-    transition: 0.05s;
+    transition: 0.1s;
     z-index: 1;
     background: #fff;
 }
@@ -148,7 +148,6 @@ header:hover {
 #Slider {
     position: relative;
     padding-bottom: 30px;
-    border-bottom: 1px solid #D1D2D4;
     overflow: hidden;
 }
 
@@ -177,6 +176,7 @@ header:hover {
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .dot {
@@ -290,10 +290,11 @@ footer {
 
 .container-bottom {
     border-bottom: 1px solid #D1D2D4;
+    margin-top: 20px;
 }
 
 .category-top {
-    margin-bottom: 50px;
+    margin: 40px;
 }
 
 .category-top p {
@@ -377,4 +378,39 @@ footer {
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
+}
+
+.category-right-bottom {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}
+
+.category-right-bottom p {
+    font-family: var(--main-text-font);
+    font-size: 14px;
+}
+
+.category-left ul li {
+    padding: 12px 0;
+    padding-left: 50px;
+}
+
+.category-left ul li>a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+
+.category-left ul li ul li {
+    padding-left: 10px;
+}
+
+.category-left-li ul {
+    display: none;
+}
+
+.category-left-li.block ul {
+    display: block;
 }

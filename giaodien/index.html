@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>Ivy</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="">
+            <img src="../images/logo.png" alt="">
         </div>
         <div class="menu">
             <li><a href="">NỮ</a>
@@ -98,10 +98,10 @@
 
     <section id="Slider">
         <div class="aspect-ratio-169">
-            <img src="images/slider1.jpg" alt="">
-            <img src="images/slider2.jpg" alt="">
-            <img src="images/slider3.jpg" alt="">
-            <img src="images/slider4.jpg" alt="">
+            <img src="../images/slider1.jpg" alt="">
+            <img src="../images/slider2.jpg" alt="">
+            <img src="../images/slider3.jpg" alt="">
+            <img src="../images/slider4.jpg" alt="">
         </div>
         <div class="dot-container">
             <div class="dot active"></div>
@@ -115,15 +115,15 @@
     <section class="app-container">
         <p>Tải ứng dung IVY moda</p>
         <div class="app-google">
-            <img src="images/appstore.png" alt="">
-            <img src="images/googleplay.png" alt="">
+            <img src="../images/appstore.png" alt="">
+            <img src="../images/googleplay.png" alt="">
         </div>
         <p>Nhận bản tin IVY moda</p>
         <input type="text" placeholder="Nhập email của bạn">
     </section>
 
     <div class="footer-top">
-        <li><a href=""> <img src="images/dathongbao.png" alt=""></a></li>
+        <li><a href=""> <img src="../images/dathongbao.png" alt=""></a></li>
         <li><a href="">Liên hệ</a></li>
         <li><a href="">Tuyển dụng</a></li>
         <li><a href="">Giới thiệu</a></li>
@@ -149,48 +149,6 @@
     </div>
 </body>
 <!------------------ Script ---------------->
-<script>
-    const header = document.querySelector("header")
-    window.addEventListener("scroll", function () {
-        x = window.pageYOffset
-        if (x > 0) {
-            header.classList.add("sticky")
-        }
-        else {
-            header.classList.remove("sticky")
-        }
-    })
-
-
-    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-    const imgContainer = document.querySelector('.aspect-ratio-169')
-    const dotItem = document.querySelectorAll(".dot")
-    let imgNumber = imgPosition.length
-    let index = 0
-
-    imgPosition.forEach(function (image, index) {
-        image.style.left = index * 100 + "%"
-        dotItem[index].addEventListener("click", function () {
-            slider(index)
-        })
-    })
-
-    function imgSlide() {
-        index++;
-        console.log(index)
-        if (index >= imgNumber) {
-            index = 0;
-        }
-        slider(index)
-    }
-
-    function slider(index) {
-        imgContainer.style.left = "-" + index * 100 + "%"
-        const dotActive = document.querySelector('.active')
-        dotActive.classList.remove("active")
-        dotItem[index].classList.add("active")
-    }
-    setInterval(imgSlide, 20000)
-</script>
+<script src="../JS/slider.js"></script>
 
 </html>
