@@ -1,15 +1,3 @@
-const header = document.querySelector("header")
-window.addEventListener("scroll", function () {
-    x = window.pageYOffset
-    if (x > 0) {
-        header.classList.add("sticky")
-    }
-    else {
-        header.classList.remove("sticky")
-    }
-})
-
-
 const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
 const imgContainer = document.querySelector('.aspect-ratio-169')
 const dotItem = document.querySelectorAll(".dot")
