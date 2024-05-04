@@ -414,3 +414,8 @@ footer {
 .category-left-li.block ul {
     display: block;
 }
+
+.category-left ul li ul li a {
+    color: #333333;
+    font-size: 12px;
+}
