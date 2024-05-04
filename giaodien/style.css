@@ -288,6 +288,10 @@ footer {
     padding: 100px 0 0;
 }
 
+.container-bottom {
+    border-bottom: 1px solid #D1D2D4;
+}
+
 .category-top {
     margin-bottom: 50px;
 }
